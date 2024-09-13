@@ -1,0 +1,51 @@
+.aboutMe {
+    width: 100%;
+    height: 100%;
+}
+
+.aboutMe .myProfilePhoto {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 0.2 white;
+}
+
+.aboutMe .myProfilePhoto > img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -5px;
+}
+
+.aboutMe p {
+    margin-top: 20px;
+    width: 80%;
+}
+
+.aboutMe .myTitle {
+    margin-top: 10px;
+}
+
+.myName {
+    display: flex;
+    flex-direction: column;
+}
+
+.myName h1 {
+    font-size: 34px;
+    letter-spacing: 2px;
+}
+
+.myName h2 {
+    font-size: 24px;
+    font-weight: 400;
+    opacity: 0.6;
+    letter-spacing: 2px;
+}
+
+.myTitle p {
+    opacity: 0.6;
+    font-size: 15px;
+    line-height: 1.5;
+}
