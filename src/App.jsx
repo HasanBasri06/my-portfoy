@@ -6,7 +6,7 @@ import Light from './Light'
 function App() {
   return (
     <Light>
-      <Layout />
+      <Layout></Layout>
     </Light>
   )
 }
