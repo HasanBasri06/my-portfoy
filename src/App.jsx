@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
-import Layout from './layout'
 import Light from './Light'
+import Layout from './layout'
 
 function App() {
   return (
