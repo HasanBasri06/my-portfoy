@@ -1,11 +1,12 @@
 import React from 'react'
 import './App.css'
 import Light from './Light'
+import Template from './Template'
 
 function App() {
   return (
     <Light>
-      <h1>Hello World</h1>
+      <Template></Template>
     </Light>
   )
 }

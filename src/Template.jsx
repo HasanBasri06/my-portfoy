@@ -4,7 +4,7 @@ import Footer from './partials/footer';
 import Header from './partials/header';
 
 
-function Layout() {
+function Template() {
 
   const careers = [
     {
@@ -87,4 +87,4 @@ function Layout() {
   )
 }
 
-export default Layout
+export default Template
