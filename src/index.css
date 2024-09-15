@@ -24,8 +24,8 @@ body {
   font-family: "SUSE", sans-serif;
   height: 100%;
   width: 100%;
-  background-color: #ffffff;
-  color: rgb(24, 24, 24)!important;
+  background-color: #09090b;
+  color: white;
 }
 
 .main {
@@ -54,6 +54,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  backdrop-filter: blur(10px);
 }
 
 header ul {
