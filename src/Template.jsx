@@ -1,6 +1,6 @@
 import React from 'react';
 import CareerBox from './components/CareerBox';
-import Header from './partials/header';
+import Header from './partials/Header';
 
 
 function Template() {
