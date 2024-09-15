@@ -1,9 +1,33 @@
-import React from 'react'
-import Footer from './partials/footer'
-import Header from './partials/header'
+import React from 'react';
+import CareerBox from './components/CareerBox';
+import Footer from './partials/footer';
+import Header from './partials/header';
 
 
 function Layout() {
+
+  const careers = [
+    {
+      id: 1,
+      title: 'Back-End Staj',
+      company: 'Jotform',
+      description: 'PHP ile jotform firmasında online form sitesinde backend tarafını geliştiridim',
+      date: '2022 - 2022'
+    },
+
+    {
+      id: 2,
+      title: 'Full-Stack Software',
+      company: 'Online Psikolog',
+      description: 'Online psikoterapi sağlayan bir firmada full stack yazılım geliştirdim.',
+      date: '2022 - 2024'
+    },
+  ];
+
+  function careerLists () {
+    return careers.sort((a, b) => b.id - a.id)
+  }
+
   return (
     <div className='main'>
       <Header />
@@ -32,8 +56,32 @@ function Layout() {
               <img src='/src/assets/github.svg' />
             </div>
           </div>
+
+          <div className='agendaBox'>
+            <h3 className='title'>Gündem</h3>
+            <div className='agendaBoxes'>
+              <div>a</div>
+              <div>b</div>
+            </div>
+          </div>
+
+          <div className='careerListBox'>
+            <h3 className='title'>Kariyer</h3>
+            <div className='careerDesc'>
+              Yazılım hayatım 2016 da meselek lisesi bilişim bölümünde başladı.
+            </div>
+            <div className='careerList'>
+              <ul>
+                { careerLists().map(item => (
+                  <li className='space-y-5 leftStick careerListRow' key={item.id}>
+                    <CareerBox career={item} />
+                  </li>
+                )) }
+              </ul>
+            </div>
+          </div>
       </div>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       <Footer />
   </div>
   )

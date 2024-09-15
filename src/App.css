@@ -74,3 +74,75 @@
     opacity: 1;
     transition: all .3s ease-in-out;
 }
+
+.agendaBox {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.title {
+    font-size: 24px;
+    color: white;
+}
+
+.agendaBoxes {
+    display: flex;
+    gap: 0 30px;
+}
+
+.agendaBoxes > div {
+    width: 250px;
+    height: 125px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.careerListBox {
+    margin-top: 50px;
+}
+
+.careerDesc {
+    margin-top: 10px;
+    color: white;
+}
+
+.career {
+    display: flex;
+    height: auto;
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.careerListRow:not(:last-child) {
+    padding-bottom: 50px;
+}
+
+.careerDateTime {
+    width: auto;
+    font-size: 15px;
+    width: 110px;
+}
+
+.careerDetail {
+    display: flex;
+    flex-direction: column;
+}
+
+.careerDetail h4 {
+    font-weight: 400;
+}
+
+.careerDesc {
+    margin-top: 15px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.careerListRow:first-child {
+    margin-top: 25px;
+}
