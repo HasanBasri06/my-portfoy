@@ -1,6 +1,5 @@
 import React from 'react';
 import CareerBox from './components/CareerBox';
-import Footer from './partials/footer';
 import Header from './partials/header';
 
 
@@ -82,7 +81,6 @@ function Template() {
           </div>
       </div>
       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-      <Footer />
   </div>
   )
 }
