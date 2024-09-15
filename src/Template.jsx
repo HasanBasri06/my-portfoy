@@ -1,6 +1,9 @@
 import React from 'react';
 import CareerBox from './components/CareerBox';
 import Header from './partials/Header';
+import Github from '/src/assets/github.svg';
+import Linkedin from '/src/assets/linkedin.svg';
+import Profile from '/src/assets/profile_1.png';
 
 
 function Template() {
@@ -33,7 +36,7 @@ function Template() {
       <div className='content'>
           <div className='aboutMe'>
             <div className='myProfilePhoto'>
-              <img src='/src/assets/profile_1.png' />
+              <img src={Profile} />
             </div>
             <div className='myTitle'>
               <div className='myName'>
@@ -49,10 +52,10 @@ function Template() {
           </div>
           <div className='socialMedias'>
             <div className='linkedin'>
-              <img src='/src/assets/linkedin.svg' />
+              <img src={Linkedin} />
             </div>
             <div className='github'>
-              <img src='/src/assets/github.svg' />
+              <img src={Github} />
             </div>
           </div>
 
