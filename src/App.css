@@ -124,18 +124,18 @@
 }
 
 .careerDateTime {
-    width: auto;
     font-size: 15px;
-    width: 110px;
+    width: 120px;
 }
 
 .careerDetail {
+    width: 375px;
     display: flex;
     flex-direction: column;
 }
 
 .careerDetail h4 {
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .careerDesc {

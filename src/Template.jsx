@@ -13,8 +13,9 @@ function Template() {
       id: 1,
       title: 'Back-End Staj',
       company: 'Jotform',
-      description: 'PHP ile jotform firmasında online form sitesinde backend tarafını geliştiridim',
-      date: '2022 - 2022'
+      description: 'PHP ile jotform firmasında, online form geliştirmesinde, backend tarafında rol aldım.',
+      date: '2022 - 2022',
+      technologies: ['PHP', 'Curl', 'Git'],
     },
 
     {
@@ -22,7 +23,17 @@ function Template() {
       title: 'Full-Stack Software',
       company: 'Online Psikolog',
       description: 'Online psikoterapi sağlayan bir firmada full stack yazılım geliştirdim.',
-      date: '2022 - 2024'
+      date: '2022 - 2024',
+      technologies: ['Laravel', 'Jquery', 'Bootstrap', 'Html / CSS', 'Git'],
+    },
+
+    {
+      id: 3,
+      title: 'Full-Stack Software - Freelence',
+      company: 'Yönetim Paneli',
+      description: 'Şirket çalışanlarının evrak ve çalışma düzeninin web tarafında işlenmesi için bir panel sağladım.',
+      date: '2024 - 2024',
+      technologies: ['Laravel', 'Jquery', 'Bootstrap', 'Html / CSS', 'Git'],
     },
   ];
 
