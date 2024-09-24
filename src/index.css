@@ -51,7 +51,6 @@ header {
   margin-top: 25px;
   width: 350px;
   height: 40px;
-  background-color: transparent;
   box-shadow: 3px 3px 10px -5px rgba(255, 255, 255, 0.2);
   border: 0.1px solid rgba(255, 255, 255, 0.1);
   border-radius: 75px;
@@ -82,7 +81,10 @@ header ul li a {
 
 footer {
   width: var(--content);
-  margin: var(--center);
+  margin: 0 auto;
+  margin-top: 30px;
+  height: 85px;
+  background-color: aqua;
 }
 
 .light {
@@ -100,4 +102,48 @@ footer {
 
 .pad-5 {
   margin-top: 15px;
+}
+
+.agendaTemplateTitle {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.agendaTemplateDesc {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.technologiesBox {
+  margin-top: 40px;
+}
+
+.technologiesBox .usedTechnologies {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-right: 25px;
+}
+
+.technologiesBox .usedTechnologies div {
+  padding: 5px 15px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #701a75;
+  font-weight: 600;
+  background-color: #f5d0fe;
+  border-radius: 7px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all .3s ease-in-out;
+}
+
+.technologiesBox .usedTechnologies div:hover {
+  opacity: 1;
 }

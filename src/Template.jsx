@@ -1,10 +1,13 @@
 import React from 'react';
+import AboutMe from './components/AboutMe';
+import Agenda from './components/Agenda';
 import CareerBox from './components/CareerBox';
+import Technology from './components/Technology';
+import Footer from './partials/Footer';
 import Header from './partials/Header';
+import GithubWhite from '/src/assets/github-white.svg';
 import Github from '/src/assets/github.svg';
 import Linkedin from '/src/assets/linkedin.svg';
-import Profile from '/src/assets/profile_1.png';
-
 
 function Template() {
 
@@ -37,6 +40,26 @@ function Template() {
     },
   ];
 
+  const agendas = [
+      {
+          id: 1,
+          name: 'Şirket İçi Evrak',
+          image: GithubWhite,
+          href: null,
+          description: 'Şirket içi evrak takibi ve işe alım ve çıkartım için bir script',
+          technologies: ['Laravel', 'Swagger', 'Rest Api']
+      },
+      {
+          id: 2,
+          name: 'To Do App',
+          image: GithubWhite,
+          href: null,
+          description: 'Vue js ile to do uygulaması yapıyorum',
+          technologies: ['Vue']
+      }
+  ];
+
+  
   function careerLists () {
     return careers.sort((a, b) => b.id - a.id)
   }
@@ -45,22 +68,7 @@ function Template() {
     <div className='main'>
       <Header />
       <div className='content'>
-          <div className='aboutMe'>
-            <div className='myProfilePhoto'>
-              <img src={Profile} />
-            </div>
-            <div className='myTitle'>
-              <div className='myName'>
-                <h1>Hasan Basri Akcıl</h1>
-                <h2>Full-Stack Developer</h2>
-              </div>
-              <p>
-                Merhaba
-                <br /><br />
-                to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset shee
-              </p>
-            </div>
-          </div>
+          <AboutMe />
           <div className='socialMedias'>
             <div className='linkedin'>
               <img src={Linkedin} />
@@ -73,15 +81,20 @@ function Template() {
           <div className='agendaBox'>
             <h3 className='title'>Gündem</h3>
             <div className='agendaBoxes'>
-              <div>a</div>
-              <div>b</div>
+              {
+                agendas.map(agenda => <Agenda key={agenda.id} agenda={agenda} />)
+              }
             </div>
+          </div>
+
+          <div className='technologiesBox'>
+              <Technology />
           </div>
 
           <div className='careerListBox'>
             <h3 className='title'>Kariyer</h3>
             <div className='careerDesc'>
-              Yazılım hayatım 2016 da meselek lisesi bilişim bölümünde başladı.
+              Yazılım hayatım 2016 da meslek lisesi bilişim bölümünde başladı.
             </div>
             <div className='careerList'>
               <ul>
@@ -94,7 +107,8 @@ function Template() {
             </div>
           </div>
       </div>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <Footer />
+
   </div>
   )
 }
