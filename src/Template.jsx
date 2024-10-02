@@ -2,6 +2,7 @@ import React from 'react';
 import AboutMe from './components/AboutMe';
 import Agenda from './components/Agenda';
 import CareerBox from './components/CareerBox';
+import SocialMedia from './components/SocialMedia';
 import Technology from './components/Technology';
 import Footer from './partials/Footer';
 import Header from './partials/Header';
@@ -70,12 +71,8 @@ function Template() {
       <div className='content'>
           <AboutMe />
           <div className='socialMedias'>
-            <div className='linkedin'>
-              <img src={Linkedin} />
-            </div>
-            <div className='github'>
-              <img src={Github} />
-            </div>
+            <SocialMedia href="https://www.linkedin.com/in/hasan-basri-b10b6b1ba/" image={Linkedin} />
+            <SocialMedia href="https://github.com/HasanBasri06" image={Github} />
           </div>
 
           <div className='agendaBox'>

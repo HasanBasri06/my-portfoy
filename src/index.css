@@ -128,21 +128,36 @@ footer {
   padding-right: 25px;
 }
 
-.technologiesBox .usedTechnologies div {
+.technologiesBox .usedTechnologies .usedTechnologiesBox {
   padding: 5px 15px;
   font-size: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #701a75;
   font-weight: 600;
-  background-color: #f5d0fe;
+  border: var(--border);
   border-radius: 7px;
   cursor: pointer;
   opacity: 0.5;
   transition: all .3s ease-in-out;
+  overflow: hidden;
+  position: relative;
 }
 
-.technologiesBox .usedTechnologies div:hover {
+.technologiesBox .usedTechnologies .usedTechnologiesBox .technologyBar {
+  height: 100%;
+  width: var(--level);
+  background-color: var(--col);
+  left: 0;
+  position: absolute;
+  z-index: 3;
+}
+
+.technologyTitle {
+  position: relative;
+  z-index: 10;
+}
+
+.technologiesBox .usedTechnologies .usedTechnologiesBox:hover {
   opacity: 1;
 }
