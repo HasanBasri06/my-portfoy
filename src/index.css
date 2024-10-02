@@ -30,11 +30,9 @@ body {
 }
 
 .main {
-  width: var(--content);
-  margin: var(--center);
   width: 100%;
+  margin: var(--center);
   padding: 15px 0;
-  /* background-color: red; */
 }
 
 .content {
@@ -49,7 +47,7 @@ header {
   transition: all .3s ease-in-out;
   margin: var(--center);
   margin-top: 25px;
-  width: 350px;
+  width: 375px;
   height: 40px;
   box-shadow: 3px 3px 10px -5px rgba(255, 255, 255, 0.2);
   border: 0.1px solid rgba(255, 255, 255, 0.1);
@@ -114,6 +112,8 @@ footer {
   font-size: 12px;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.6);
+  position: relative;
+  z-index: 5;
 }
 
 .technologiesBox {
@@ -160,4 +160,26 @@ footer {
 
 .technologiesBox .usedTechnologies .usedTechnologiesBox:hover {
   opacity: 1;
+}
+
+.careerBox {
+  margin-top: 15px;
+  width: 85%;
+  height: auto;
+  padding: 15px 0;
+  box-sizing: border-box;
+  border-radius: 7px;
+}
+
+.careerBox + .careerBox {
+  margin-top: 15px;
+}
+
+
+@media screen and (min-width: 1280px) {
+  .main {
+    width: var(--content);
+    margin: var(--center);
+    padding: 15px 0;
+  }
 }

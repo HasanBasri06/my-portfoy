@@ -8,13 +8,13 @@ function Header() {
                 <a href=''>Hakkımda</a>
             </li>
             <li>
+                <a href=''>Gündem</a>
+            </li>
+            <li>
+                <a href=''>Teknolojiler</a>
+            </li>
+            <li>
                 <a href=''>Kariyer</a>
-            </li>
-            <li>
-                <a href=''>Projeler</a>
-            </li>
-            <li>
-                <a href=''>Deneme</a>
             </li>
         </ul>
     </header>

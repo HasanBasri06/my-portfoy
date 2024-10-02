@@ -4,7 +4,6 @@ import Agenda from './components/Agenda';
 import CareerBox from './components/CareerBox';
 import SocialMedia from './components/SocialMedia';
 import Technology from './components/Technology';
-import Footer from './partials/Footer';
 import Header from './partials/Header';
 import GithubWhite from '/src/assets/github-white.svg';
 import Github from '/src/assets/github.svg';
@@ -47,7 +46,7 @@ function Template() {
           name: 'Şirket İçi Evrak',
           image: GithubWhite,
           href: null,
-          description: 'Şirket içi evrak takibi ve işe alım ve çıkartım için bir script',
+          description: 'Şirketler için hazırlanmış evrak ve eleman takibi api',
           technologies: ['Laravel', 'Swagger', 'Rest Api']
       },
       {
@@ -77,6 +76,7 @@ function Template() {
 
           <div className='agendaBox'>
             <h3 className='title'>Gündem</h3>
+            <div className='agendaDesc'>Şuanda üzerinde çalıştığım projeler</div>
             <div className='agendaBoxes'>
               {
                 agendas.map(agenda => <Agenda key={agenda.id} agenda={agenda} />)
@@ -94,17 +94,10 @@ function Template() {
               Yazılım hayatım 2016 da meslek lisesi bilişim bölümünde başladı.
             </div>
             <div className='careerList'>
-              <ul>
-                { careerLists().map(item => (
-                  <li className='space-y-5 leftStick careerListRow' key={item.id}>
-                    <CareerBox career={item} />
-                  </li>
-                )) }
-              </ul>
+                { careerLists().map((career, index) => <CareerBox career={career} key={index} />) }
             </div>
           </div>
       </div>
-      <Footer />
 
   </div>
   )

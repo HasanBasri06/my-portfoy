@@ -1,18 +1,20 @@
 import React from 'react';
 
-function CareerBox({career}) {
+function Tecknology({tecknology, index}) {
+    return <span key={index}>{tecknology}</span>
+}
+
+function CareerBox({career, index}) {
     return (
-        <div className='career'>
-            <div className='careerDateTime'>{career.date}</div>
-            <div className='careerDetail'>
-            <div>
-                <h3>{career.title}</h3>
-                <h4>{career.company}</h4>
+        <div className='careerBox' key={index}>
+            <h4 className='careerTitle'>{career.company}</h4>
+            <div className='careerRow'>
+                <h5 className='careerCity'>{career.title}</h5>
+                <div className='careerDate'>{career.date}</div>
             </div>
-            <h4 className='careerDesc'>
-                {career.description}
-            </h4>
-            <h5 className='pad-5'>{career.technologies.join(', ')}</h5>
+            <p className='careerDesc'>{career.description}</p>
+            <div className='careerTechnologies'>
+                { career.technologies.map((tecknology, index) => <Tecknology tecknology={tecknology} key={index} />) }
             </div>
         </div>
     )
