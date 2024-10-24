@@ -62,6 +62,16 @@ function Technology() {
             level: '80%',
             color: '#172554',
         },
+        {
+            name: 'WebSocket',
+            level: '20%',
+            color: '#f9a8d4'
+        },
+        {
+            name: 'Docker',
+            level: '45%',
+            color: '#3b82f6'
+        }
     ]
 
     return (

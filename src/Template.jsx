@@ -4,10 +4,10 @@ import Agenda from './components/Agenda';
 import CareerBox from './components/CareerBox';
 import SocialMedia from './components/SocialMedia';
 import Technology from './components/Technology';
-import Header from './partials/Header';
 import GithubWhite from '/src/assets/github-white.svg';
 import Github from '/src/assets/github.svg';
 import Linkedin from '/src/assets/linkedin.svg';
+import Header from '/src/partials/Header'
 
 function Template() {
 
@@ -51,10 +51,10 @@ function Template() {
       },
       {
           id: 2,
-          name: 'To Do App',
+          name: 'Anlık Mesajlaşma',
           image: GithubWhite,
           href: null,
-          description: 'Vue js ile to do uygulaması yapıyorum',
+          description: 'Bire bir ve grup konuşması yapabileceği sohbet uygulaması',
           technologies: ['Vue']
       }
   ];

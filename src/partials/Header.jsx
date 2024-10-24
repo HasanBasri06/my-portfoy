@@ -1,23 +1,23 @@
 import React from 'react'
 
 function Header() {
-  return (
-    <header>
-        <ul>
-            <li>
-                <a href=''>Hakkımda</a>
-            </li>
-            <li>
-                <a href=''>Gündem</a>
-            </li>
-            <li>
-                <a href=''>Teknolojiler</a>
-            </li>
-            <li>
-                <a href=''>Kariyer</a>
-            </li>
-        </ul>
-    </header>
+    const header = [
+        {name: 'Hakkımda', to: ''},
+        {name: 'Gündem', to: ''},
+        {name: 'Teknolojiler', to: ''},
+        {name: 'Kariyer', to: ''},
+    ]
+
+    return (
+        <header>
+            <ul>
+                { header.map((menu, index) => (
+                    <li key={index}>
+                        <a href={menu.to}>{ menu.name }</a>
+                    </li>
+                )) }
+            </ul>
+        </header>
   )
 }
 
