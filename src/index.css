@@ -32,11 +32,12 @@ body {
 .main {
   width: 100%;
   margin: var(--center);
-  padding: 15px 0;
+  padding: 0 0;
+  box-sizing: border-box;
 }
 
 .content {
-  width: var(--content);
+  width: 100%;
   margin: 15px auto;
   margin-top: 100px;
 }
@@ -46,7 +47,7 @@ header {
   transition: all .3s ease-in-out;
   margin: var(--center);
   width: 100%;
-  height: 40px;
+  height: 60px;
   box-shadow: 3px 3px 10px -5px rgba(255, 255, 255, 0.2);
   border: 0.1px solid rgba(255, 255, 255, 0.1);
   display: flex;
@@ -54,7 +55,7 @@ header {
   align-items: center;
   backdrop-filter: blur(10px);
   z-index: 50;
-  top: 40px;
+  top: 0;
 }
 
 header ul {
@@ -77,7 +78,7 @@ header ul li a {
 
 .light {
   position: absolute;
-  width: 1200px;
+  width: 100%;
   height: 275px;
   background-color: rgba(1, 48, 255, 0.15);
   z-index: -1;
@@ -94,13 +95,13 @@ header ul li a {
 
 .agendaTemplateTitle {
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 600;
 }
 
 .agendaTemplateDesc {
   margin-top: 10px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.6);
   position: relative;
@@ -109,6 +110,7 @@ header ul li a {
 
 .technologiesBox {
   margin-top: 40px;
+  padding: 0 25px;
 }
 
 .technologiesBox .usedTechnologies {
@@ -175,9 +177,34 @@ header ul li a {
     justify-content: center;
     border: 0.1px solid rgba(255, 255, 255, 0.1);
     border-radius: 75px;
+    top: 35px;
   }
 
   header ul {
     gap: 0 25px;
+  }
+
+  .main {
+    padding: 15px 0;
+  }
+
+  .light {
+    width: 1200px;
+  }
+
+  .technologiesBox {
+    padding: 0;
+  }
+
+  .content {
+    width: var(--content);
+  }
+
+  .agendaTemplateTitle {
+    font-size: 14px;
+  }
+
+  .agendaTemplateDesc {
+    font-size: 12px;
   }
 }

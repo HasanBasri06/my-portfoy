@@ -1,6 +1,8 @@
 .aboutMe {
     width: 100%;
     height: 100%;
+    padding: 0 25px;
+    box-sizing: border-box;
 }
 
 .aboutMe .myProfilePhoto {
@@ -33,7 +35,7 @@
 }
 
 .myName h1 {
-    font-size: 42px;
+    font-size: 38px;
     letter-spacing: 2px;
 }
 
@@ -54,6 +56,7 @@
     margin-top: 25px;
     display: flex;
     gap: 0 25px;
+    padding: 0 25px;
 }
 
 .socialMedias div {
@@ -82,6 +85,8 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
+    padding: 0 25px;
+    box-sizing: border-box;
 }
 
 .title {
@@ -91,12 +96,14 @@
 
 .agendaBoxes {
     display: flex;
-    gap: 0 30px;
+    gap: 25px 30px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .agendaBoxes > .agendaTemplate {
-    width: 250px;
-    height: 135px;
+    width: 100%;
+    height: 175px;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.5);
     padding: 15px;
@@ -117,15 +124,8 @@
 
 .agendaBoxes .agendaTemplate .agendaCircle {
     position: absolute;
-    width: 150px;
-    height: 150px;
-    background-color: rgba(163, 163, 163, 0.377);
-    border-radius: 100%;
-    right: -150px;
-    bottom: -150px;
-    z-index: 3;
-    transition: all .3s ease-in-out;
-    animation: circleOut .4s ease-in-out forwards;
+    width: 200px;
+    height: 200px;
 }
 
 @keyframes circle {
@@ -152,6 +152,7 @@
 
 .careerListBox {
     margin-top: 50px;
+    padding: 0 25px;
 }
 
 .careerDesc {
@@ -222,4 +223,53 @@
     font-weight: 500;
     opacity: 0.5;
     cursor: pointer;
+}
+
+@media screen and (min-width: 1280px) {
+    .aboutMe {
+        padding: 0;
+    }
+
+    .myName h1 {
+        font-size: 42px;
+    }
+
+    .myName h2 {
+        font-size: 22px;
+    }
+
+    .myTitle p {
+        font-size: 14px;
+    }
+
+    .socialMedias {
+        padding: 0;
+    }
+
+    .agendaBox {
+        padding: 0;
+    }
+
+    .careerListBox {
+        padding: 0;
+    }
+
+    .agendaBoxes {
+        display: flex;
+        gap: 0 30px;
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    .agendaBoxes > .agendaTemplate {
+        width: 250px;
+        height: 135px;
+    }
+
+    .agendaBoxes .agendaTemplate .agendaCircle {
+        width: 150px;
+        height: 150px;
+        right: -150px;
+        bottom: -150px;
+    }
 }
