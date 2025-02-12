@@ -9,32 +9,32 @@ function Technology() {
         },
         {
             name: 'Laravel',
-            level: '80%',
+            level: '85%',
             color: '#be123c',
         },
         {
             name: 'Javascript',
-            level: '70%',
+            level: '75%',
             color: '#67e8f9',
         },
         {
             name: 'Vue',
-            level: '50%',
+            level: '75%',
             color: '#10b981',
         },
         {
             name: 'React',
-            level: '50%',
+            level: '65%',
             color: '#1e40af',
         },
         {
             name: 'Git',
-            level: '60%',
+            level: '75%',
             color: '#9f1239',
         },
         {
             name: 'Redis',
-            level: '10%',
+            level: '50%',
             color: '#713f12',
         },
         {
@@ -59,18 +59,28 @@ function Technology() {
         },
         {
             name: 'Tailwind',
-            level: '80%',
+            level: '90%',
             color: '#172554',
         },
         {
             name: 'WebSocket',
-            level: '20%',
+            level: '30%',
             color: '#f9a8d4'
         },
         {
             name: 'Docker',
             level: '45%',
             color: '#3b82f6'
+        },
+        {
+            name: 'Java',
+            level: '25%',
+            color: 'yellow'
+        },
+        {
+            name: 'Spring Boot',
+            level: '35%',
+            color: 'green'
         }
     ]
 

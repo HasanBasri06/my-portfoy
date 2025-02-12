@@ -7,13 +7,12 @@ import Technology from './components/Technology';
 import GithubWhite from '/src/assets/github-white.svg';
 import Github from '/src/assets/github.svg';
 import Linkedin from '/src/assets/linkedin.svg';
-import Header from '/src/partials/Header'
+import Header from '/src/partials/Header';
 
 function Template() {
 
   const careers = [
     {
-      id: 1,
       title: 'Back-End Staj',
       company: 'Jotform',
       description: 'PHP ile jotform firmasında, online form geliştirmesinde, backend tarafında rol aldım.',
@@ -22,16 +21,20 @@ function Template() {
     },
 
     {
-      id: 2,
-      title: 'Full-Stack Software',
+      title: 'Full-Stack Software Dev',
       company: 'Online Psikolog',
       description: 'Online psikoterapi sağlayan bir firmada full stack yazılım geliştirdim.',
       date: '2022 - 2024',
       technologies: ['Laravel', 'Jquery', 'Bootstrap', 'Html / CSS', 'Git'],
     },
-
     {
-      id: 3,
+      title: 'Full-Stack Software Dev.',
+      company: 'Basamak Bilişim',
+      description: 'Derneklere hizmet veren bir yazılım firmasında yazılım desteği sundum.',
+      date: '2022 - 2024',
+      technologies: ['PHP', 'Jquery', 'Bootstrap', 'Html / CSS'],
+    },
+    {
       title: 'Full-Stack Software - Freelence',
       company: 'Yönetim Paneli',
       description: 'Şirket çalışanlarının evrak ve çalışma düzeninin web tarafında işlenmesi için bir panel sağladım.',

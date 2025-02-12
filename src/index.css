@@ -54,6 +54,7 @@ header {
   align-items: center;
   backdrop-filter: blur(10px);
   z-index: 50;
+  top: 40px;
 }
 
 header ul {
@@ -128,7 +129,6 @@ header ul li a {
   border: var(--border);
   border-radius: 7px;
   cursor: pointer;
-  opacity: 0.5;
   transition: all .3s ease-in-out;
   overflow: hidden;
   position: relative;
