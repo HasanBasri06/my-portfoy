@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   --content: 650px;
   --center: 0 auto;
@@ -19,6 +21,10 @@ p {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -36,10 +42,30 @@ body {
   box-sizing: border-box;
 }
 
-.content {
-  width: 100%;
-  margin: 15px auto;
-  margin-top: 100px;
+@layer components {
+  .content {
+    @apply w-full mx-auto my-4
+  }
+
+  .imp {
+    @apply text-red-600
+  }
+}
+
+.dropcap {
+  float: left;
+  font-size: 4rem;
+  line-height: 1;
+  padding: 0 10px 0 0;
+}
+
+pre {
+  padding: 10px 15px;
+  background-color: rgb(21, 12, 77);
+  color: #b7b7ff;
+  border-radius: 5px;
+  margin: 15px 0;
+  font-weight: 500;
 }
 
 header {
@@ -56,6 +82,7 @@ header {
   backdrop-filter: blur(10px);
   z-index: 50;
   top: 0;
+  padding: 0 50px;
 }
 
 header ul {

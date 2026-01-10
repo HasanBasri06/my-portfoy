@@ -41,6 +41,13 @@ function Template() {
       date: '2024 - 2024',
       technologies: ['Laravel', 'Jquery', 'Bootstrap', 'Html / CSS', 'Git'],
     },
+    {
+      title: 'Full-Stack Software',
+      company: 'Copetract',
+      description: 'Türkiye genelinde devleşmiş firmaların dijital belge yönetimini sağlayan hizmetlerin yazılım departmanında çalıştım.',
+      date: '2025 - 2026',
+      technologies: ['Laravel', 'NextJs', 'Tailwind', 'Git', 'Gitlab', 'NodeJs', 'AI'],
+    },
   ];
 
   const agendas = [
@@ -64,7 +71,7 @@ function Template() {
 
   
   function careerLists () {
-    return careers.sort((a, b) => b.id - a.id)
+    return careers.reverse().sort((a, b) => b.id - a.id)
   }
 
   return (
@@ -77,7 +84,7 @@ function Template() {
             <SocialMedia href="https://github.com/HasanBasri06" image={Github} />
           </div>
 
-          <div className='agendaBox'>
+          <div className='agendaBox' id='gundem'>
             <h3 className='title'>Gündem</h3>
             <div className='agendaDesc'>Şuanda üzerinde çalıştığım projeler</div>
             <div className='agendaBoxes'>
@@ -87,11 +94,11 @@ function Template() {
             </div>
           </div>
 
-          <div className='technologiesBox'>
+          <div className='technologiesBox' id='technologies'>
               <Technology />
           </div>
 
-          <div className='careerListBox'>
+          <div className='careerListBox' id='career'>
             <h3 className='title'>Kariyer</h3>
             <div className='careerDesc'>
               Yazılım hayatım 2016 da meslek lisesi bilişim bölümünde başladı.

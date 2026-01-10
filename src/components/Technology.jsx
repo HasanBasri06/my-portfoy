@@ -24,8 +24,13 @@ function Technology() {
         },
         {
             name: 'React',
-            level: '65%',
+            level: '75%',
             color: '#1e40af',
+        },
+        {
+            name: 'NextJs',
+            level: '85%',
+            color: '#032B43',
         },
         {
             name: 'Git',
@@ -36,6 +41,16 @@ function Technology() {
             name: 'Redis',
             level: '50%',
             color: '#713f12',
+        },
+        {
+            name: 'Cursor',
+            level: '85%',
+            color: '#D00000',
+        },
+        {
+            name: 'AI',
+            level: '85%',
+            color: '#3F88C5',
         },
         {
             name: 'Jquery',
@@ -73,13 +88,13 @@ function Technology() {
             color: '#3b82f6'
         },
         {
-            name: 'Java',
-            level: '25%',
+            name: 'NodeJs',
+            level: '45%',
             color: 'yellow'
         },
         {
-            name: 'Spring Boot',
-            level: '35%',
+            name: 'ExpressJs',
+            level: '50%',
             color: 'green'
         }
     ]
@@ -90,7 +105,7 @@ function Technology() {
             <div className='usedTechnologies'>
                 {
                     technologies.map((technology, index) => (
-                        <div key={index} className='usedTechnologiesBox' style={{'--border': '1px solid ' + technology.color}}>
+                        <div key={index} className='usedTechnologiesBox' title={technology.name} style={{'--border': '1px solid ' + technology.color}}>
                             <div className='technologyBar' style={{'--col': technology.color, '--level': technology.level}}></div>
                             <div className='technologyTitle'>{technology.name}</div>
                         </div>

@@ -2,15 +2,16 @@ import React from 'react'
 
 function Header() {
     const header = [
-        {name: 'Hakkımda', to: ''},
-        {name: 'Gündem', to: ''},
-        {name: 'Teknolojiler', to: ''},
-        {name: 'Kariyer', to: ''},
+        {name: 'Hakkımda', to: '/'},
+        // {name: 'Blog', to: '/blogs'},
+        {name: 'Gündem', to: '#gundem'},
+        {name: 'Teknolojiler', to: '#technologies'},
+        {name: 'Kariyer', to: '#career'},
     ]
 
     return (
         <header>
-            <ul>
+            <ul className='px-4'>
                 { header.map((menu, index) => (
                     <li key={index}>
                         <a href={menu.to}>{ menu.name }</a>
