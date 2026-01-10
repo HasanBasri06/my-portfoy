@@ -19,6 +19,10 @@ function AboutMe() {
                 çalışmaktayım ve çeşitli projelerde yer aldım. Başta <strong>PHP/Laravel</strong> ve <strong>Javascript/VueJs</strong> olmak üzere
                 çeşitli dillere hakimim, bunların yanında alt teknolojiler olarak da <strong>CSS/Bootstrap/Tailwindcss</strong> ve
                 Jquery teknolojilerine hakimim.
+
+                <br /><br />İletişim:<br />
+                Telefon: <a className='hover:underline' href='https://wa.me/+905061192539' target='_blank'>+90 506 119 25 39</a><br />
+                E-Posta: <a className='hover:underline' href='mailto:basriakcil06@gmail.com'>basriakcil06@gmail.com</a>
             </p>
         </div>
     </div>
