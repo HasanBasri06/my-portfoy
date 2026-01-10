@@ -31,7 +31,7 @@ function Template() {
       title: 'Full-Stack Software Dev.',
       company: 'Basamak Bilişim',
       description: 'Derneklere hizmet veren bir yazılım firmasında yazılım desteği sundum.',
-      date: '2022 - 2024',
+      date: '2024 - 2024',
       technologies: ['PHP', 'Jquery', 'Bootstrap', 'Html / CSS'],
     },
     {
