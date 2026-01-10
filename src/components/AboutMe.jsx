@@ -21,8 +21,8 @@ function AboutMe() {
                 Jquery teknolojilerine hakimim.
 
                 <br /><br />İletişim:<br />
-                Telefon: <a className='hover:underline' href='https://wa.me/+905061192539' target='_blank'>+90 506 119 25 39</a><br />
-                E-Posta: <a className='hover:underline' href='mailto:basriakcil06@gmail.com'>basriakcil06@gmail.com</a>
+                Telefon: <a className='hover:underline text-white' href='https://wa.me/+905061192539' target='_blank'>+90 506 119 25 39</a><br />
+                E-Posta: <a className='hover:underline text-white' href='mailto:basriakcil06@gmail.com'>basriakcil06@gmail.com</a>
             </p>
         </div>
     </div>
